@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glass-morph">
+        <div class="container">
+            <h1>Weather </h1>
+            <div class="login-logo" onclick="toggleLoginForm()">
+                <img src="login-logo.png" alt="Login Logo">
+            </div>
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button onclick="searchWeather()">Search</button>
+            </div>
+            <div id="weatherInfo">
+                <!-- Weather information will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="login-popup" id="loginPopup">
+        <div class="login-form">
+            <!-- Login form content -->
+            <h2>Login</h2>
+            <form onsubmit="return loginUser()">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Sign In</button>
+            </form>
+            <button onclick="closeLoginForm()">Close</button>
+            <p>If you don't have an account, <a href="#" onclick="openRegistrationForm()">Create now!</a></p>
+        </div>
+    </div>
+
+    <div class="registration-popup" id="registrationPopup">
+        <div class="registration-form">
+            <!-- Registration form content -->
+            <h2>Create Account</h2>
+            <form onsubmit="return registerUser()">
+                <input type="text" id="newUsername" placeholder="Username">
+                <input type="password" id="newPassword" placeholder="Password">
+                <button type="submit">Create Account</button>
+            </form>
+            <button onclick="closeRegistrationForm()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

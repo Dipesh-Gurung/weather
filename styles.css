@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image5.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center;
+    height: 100vh;
+}
+
+.glass-morph {
+    background: rgba(255, 255, 255, 0.05); /* Adjust the alpha value (0.05) to make it more transparent */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 70%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width */
+    margin: 50px auto;
+    padding: 20px;
+}
+.container {
+    text-align: center;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherInfo {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* CSS to adjust the size of the PNG icons */
+.humidity-icon,
+.temperature-icon,
+.icon {
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */
+}
+.login-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.login-logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Transition for smooth scaling */
+}
+
+.login-logo img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-form h2 {
+    margin-top: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-form button {
+    background-color: #ccc;
+}
+/* Existing CSS styles for login-popup and login-form remain the same */
+
+.registration-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.registration-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.registration-form h2 {
+    margin-top: 0;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.registration-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.registration-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.registration-form button {
+    background-color: #ccc;
+}
+
